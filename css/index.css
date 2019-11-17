@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #f7fdfe;
 }
 /* About */
-.section {
+.about {
     text-align: center;
     padding: 60px 0px 65px;
 }
@@ -95,4 +95,54 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat;
     font-size: 20px;
     color: #45494d;
+}
+/* Team */
+.team {
+    text-align: center;
+    background-color: #0ebfdd;
+    padding: 60px 0;
+}
+.team-title {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 44px;
+}
+.team-item {
+    margin: 100px auto;
+    display: flex;
+    width: 590px;
+    justify-content: space-between;
+}
+.team-name {
+    margin-top: 5px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.team-post {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.team-btn {
+    display: inline-block;
+    padding: 0 35px;
+    height: 38px;
+    line-height: 38px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px #ffffff solid;
+    border-radius: 30px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+.team-btn:hover {
+    background-color: #ffffff;
+    color: #0ebfdd;
 }
