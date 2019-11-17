@@ -1,3 +1,53 @@
+*, 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 body {
-    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+/* Header */
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.logo-text {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    color: #82868f;
+}
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #82868f;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 14px 35px;
+    border-radius: 30px;
+    transition: background-color 0.2s linear, color 0.2s linear
+}
+.nav-link.active {
+    background-color: #0ebfdd;
+    color: #ffffff;
+}
+.nav-link:hover {
+    background-color: #0ebfdd;
+    color: #ffffff;
 }
