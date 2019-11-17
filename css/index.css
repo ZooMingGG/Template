@@ -79,5 +79,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     font-size: 20px;
     color: #f7fdfe;
-
+}
+/* About */
+.section {
+    text-align: center;
+    padding: 60px 0px 65px;
+}
+.about-title {
+    font-family: Montserrat;
+    font-size: 44px;
+    color: #0ebfdd;
+    margin-bottom: 20px;
+}
+.about-text {
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #45494d;
 }
