@@ -271,6 +271,20 @@ iframe {
         padding: 40px 0 50px;
     }
 
+/* Team */
+    .team-item {
+        flex-wrap: wrap;
+    }
+
+    .team-items {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .team-items:last-child {
+        margin-bottom: 0;
+    }
+
 /* Footer */
     .footer-info {
         flex-wrap: wrap;
