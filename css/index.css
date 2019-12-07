@@ -3,19 +3,23 @@
 *:after {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 .container {
     width: 100%;
     max-width: 970px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /* Header */
 /* Navigation */
 .navigation {
@@ -24,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     height: 80px;
 }
+
 .logo-text {
     font-family: Montserrat;
     text-transform: uppercase;
@@ -31,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     color: #82868f;
 }
+
 .nav-link {
     display: inline-block;
     text-decoration: none;
@@ -44,14 +50,17 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 30px;
     transition: background-color 0.2s linear, color 0.2s linear
 }
+
 .nav-link.active {
     background-color: #0ebfdd;
     color: #ffffff;
 }
+
 .nav-link:hover {
     background-color: #0ebfdd;
     color: #ffffff;
 }
+
 /* Intro */
 .intro {
     padding: 400px 0 0;
@@ -61,60 +70,71 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     text-align: center;
 }
+
 .intro-title {
     color: #f7fdfe;
     margin-bottom: 20px;
 }
+
 .intro-title-text {
     margin: 0 20px;
     font-family : Montserrat;
     font-weight: 500;
     font-size: 44px;
 }
+
 .intro-title-star {
     font-size: 12px;
     vertical-align: 100%;
 }
+
 .intro-text {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 20px;
     color: #f7fdfe;
 }
+
 /* About */
 .about {
     text-align: center;
     padding: 60px 0px 65px;
 }
+
 .about-title {
     font-family: Montserrat;
     font-size: 44px;
     color: #0ebfdd;
     margin-bottom: 20px;
 }
+
 .about-text {
     font-family: Montserrat;
     font-size: 20px;
     color: #45494d;
 }
+
 /* Team */
 .team {
     text-align: center;
     background-color: #0ebfdd;
     padding: 60px 0;
 }
+
 .team-title {
     font-family: Montserrat;
     color: #ffffff;
     font-weight: 500;
     font-size: 44px;
 }
+
 .team-item {
     margin: 100px auto;
     display: flex;
     width: 590px;
     justify-content: space-between;
 }
+
 .team-name {
     margin-top: 5px;
     font-family: Montserrat;
@@ -122,12 +142,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 400;
 }
+
 .team-post {
     font-family: Montserrat;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
 }
+
 .team-btn {
     display: inline-block;
     padding: 0 35px;
@@ -143,10 +165,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 30px;
     transition: background-color 0.2s linear, color 0.2s linear;
 }
+
 .team-btn:hover {
     background-color: #ffffff;
     color: #0ebfdd;
 }
+
 /* Map */
 iframe {
     display: block;
@@ -154,17 +178,20 @@ iframe {
     height: 600px;
     border: 0;
 }
+
 /* Footer */
 .footer {
     background-color: #45494d;
     padding: 0px 0 15px;
 }
+
 .footer-info {
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
 }
+
 .about-text {
     font-family: Montserrat;
     font-size: 12px;
@@ -173,6 +200,7 @@ iframe {
     color: #a7acb2;
     margin-right: 30px;
 }
+
 .footer-link {
     display: inline-block;
     padding: 0 15px;
@@ -183,16 +211,19 @@ iframe {
     border: 1px #d7dee4 solid;
     border-radius: 50%;
 }
+
 .footer-hr {
     background-color: #6e7175;
     height: 1px;
     border: none;
     margin: 0 0 15px 0;
 }
+
 .copyright {
     display: flex;
     justify-content: flex-end;
 }
+
 .copyright-text {
     font-family: Montserrat;
     font-size: 12px;
@@ -202,14 +233,66 @@ iframe {
 }
 
 /* Media */
-@media (max-width: 970px) {
-    
-}
 
 @media (max-width: 770px) {
+/* Nav */
+    .nav {
+        display: none;
+    }
 
+/* Team */
+    .team-item {
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 65px auto;
+    }
 }
 
 @media (max-width: 575px) {
-    
+/* Intro */
+    .intro {
+        padding: 300px 0 0;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
+    .intro-title-text {
+        font-size: 30px;
+    }
+
+    .intro-title-star {
+        vertical-align: 40%;
+    }
+
+/* About */
+    .about {
+        padding: 40px 0 50px;
+    }
+
+/* Footer */
+    .footer-info {
+        flex-wrap: wrap;
+    }
+
+    .footer-about {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+    }
+
+/* Copyright */
+    .copyright {
+        justify-content: center;
+    }
+
+    .copyright-text {
+        margin-left: 7px;
+        font-size: 8px;
+    }
 }
