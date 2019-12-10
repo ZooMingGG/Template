@@ -61,6 +61,51 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
+/* Toggle */
+.toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.toggle-btn,
+.toggle-btn:before,
+.toggle-btn:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin: -1.5px 0 0 -15px;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: #0ebfdd; 
+}
+
+.toggle-btn:before {
+    content: "";
+    transform: translateY(-10px);
+}
+
+.toggle-btn:after {
+    content: "";
+    transform: translateY(10px);
+}
+
+.toggle-active .toggle-btn {
+    height: 0;
+}
+
+.toggle-active .toggle-btn:before {
+    transform: rotate(45deg);
+}
+
+.toggle-active .toggle-btn:after {
+    transform: rotate(-45deg);
+}
+
 /* Intro */
 .intro {
     padding: 400px 0 0;
@@ -240,6 +285,11 @@ iframe {
         display: none;
     }
 
+/* Toggle */
+    .toggle {
+        display: block;
+    }
+
 /* Team */
     .team-item {
         max-width: 100%;
@@ -249,6 +299,11 @@ iframe {
 }
 
 @media (max-width: 575px) {
+/* Toggle */
+    .toggle {
+        margin-right: 0;
+    }
+
 /* Intro */
     .intro {
         padding: 300px 0 0;
