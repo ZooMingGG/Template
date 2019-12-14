@@ -289,16 +289,17 @@ iframe {
     .nav {
         display: none;
         position: absolute;
-        display: flex;
         top: 80px; 
         width: 100%;
         margin-left: -15px;
         background-color: white; 
-        flex-direction: column;
     }
 
     .nav-link {
         margin: 20px auto;
+        display: block;
+        width: 140px;
+        text-align: center;
     }
 
 /* Toggle */
