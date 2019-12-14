@@ -282,8 +282,23 @@ iframe {
 
 @media (max-width: 770px) {
 /* Nav */
+    .header {
+        position: relative;
+    }
+
     .nav {
         display: none;
+        position: absolute;
+        display: flex;
+        top: 80px; 
+        width: 100%;
+        margin-left: -15px;
+        background-color: white; 
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 20px auto;
     }
 
 /* Toggle */
