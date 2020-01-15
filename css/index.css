@@ -295,6 +295,10 @@ iframe {
         background-color: white; 
     }
 
+    .nav-active {
+        display: block;
+    }
+
     .nav-link {
         margin: 20px auto;
         display: block;
